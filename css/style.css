@@ -34,8 +34,22 @@
 .logo-img, .perfil-img{
     width: 35px;
 }
+.banner img{
+    max-width:1349px;
+}
 a{
     text-decoration: none;
     color: white;
 
+}
+.conteudo-box{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo-title{
+    font-size: 30px;
+}
+.conteudo-img{
+    width: 280px;
 }
