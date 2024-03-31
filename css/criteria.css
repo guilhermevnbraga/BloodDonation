@@ -1,0 +1,29 @@
+.fullBody {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Isso é para garantir que o conteúdo fique centralizado na tela inteira */
+}
+
+.criteria {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    width: 80%; /* Ajuste conforme necessário */
+    height: 91%;
+    max-width: 500%; /* Ajuste conforme necessário */
+    background-color: rgb(191, 188, 188);
+}
+
+.criteria .image {
+    flex: 0 0 auto; /* Tamanho automático para a imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.criteria .content {
+    flex: 1; /* Ocupa o restante do espaço disponível */
+}
+
+.criteria img {
+    max-width: 100%; /* Ajuste conforme necessário */
+    height: auto;
+}
