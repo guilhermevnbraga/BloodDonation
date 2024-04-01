@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: "Roboto", sans-serif;
+    overflow-X: hidden;
+
 }
 
 .main__header{
@@ -13,6 +16,9 @@
     color: white;
 
 }
+.main__conteudo{
+    margin-top: 25px;
+}
 .container{
     width: 90%;
     justify-content: space-around;
@@ -21,8 +27,12 @@
 .header-logo,.header-perfil{
     align-items: center;
 }
+.header-logo >p{
+    font-weight: 500;
+}
 
 .flex{
+
     display: flex;
 
 }
@@ -35,21 +45,124 @@
     width: 35px;
 }
 .banner img{
-    max-width:1349px;
+    max-width:100%  ;
 }
-a{
+.nav-list a, .header-perfil > a{
     text-decoration: none;
     color: white;
 
 }
 .conteudo-box{
+    margin: auto;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.conjunto-cards{
+    justify-content: space-around;
+}
+.card{
+    width: 300px;
+    background-color: rgb(194, 189, 189);
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card > h3{
+    text-align: center;
+}
+.card-1 >img{
+    width: 150px;
+    /* margin: 0px 0px ; */
+    margin-left: 60px;
+}
 .conteudo-title{
     font-size: 30px;
+    text-align: center;
 }
 .conteudo-img{
     width: 280px;
+}
+.footer{
+    background-color: rgb(194, 189, 189);
+    padding: 25px;
+
+}
+.footer > div{
+    margin: auto;
+    justify-content: space-between;
+ 
+    /* height: ; */
+}
+.footer-img{
+    width: 300px;
+}
+.footer-icon{
+    width: 50px;
+}
+.footer-icon-2{
+    width: 42px;
+}
+.footer-midias div{
+    align-items: center;
+}
+.footer-conteudos{
+    padding-top: 43px;
+}
+.footer-conteudos> h3{
+    font-size: 35px
+}
+.footer-conteudos >p{
+    font-size: 20px;
+}
+.container-2{
+    width: 300px;
+}
+.container-4{
+    width: 400px;
+}
+.tabela{
+    width: 90%;
+    margin: auto;
+}
+.container-3{
+    width: 1200px;
+    margin: auto;
+}
+.espaco{
+    margin-top: 40px;
+}
+.bloco-compatiblidade>img,.bloco-compatiblidade>div{
+    margin-top: -10%;
+}
+.margin{
+    margin: auto;
+}
+
+.tamanho-texto{
+    max-width:800px;
+}
+@media screen and (max-width: 1326px){
+    .img-joinha{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 1120px) {
+
+    .conjunto-cards,.bloco-compatiblidade{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conjunto-cards{
+        gap: 20px;
+    }
+    .footer-img{
+        display: none;
+    }
+
 }

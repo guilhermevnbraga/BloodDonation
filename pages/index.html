@@ -7,70 +7,76 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header class="main__header">
+        <div class="container flex">
+            <div class="header-logo flex">
+                <img class="logo-img" src="../img/img-header.png" alt="">
+                <p>Doaçao de Sangue</p>
+            </div>
+            <nav class="header-nav ">
+                <ul class="nav-list flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./hemocentros.html">Hemocentros</a></li>
+                    <li><a href="#">Quem Pode Doar</a></li>
+                </ul>
+            </nav>
+            <div class="header-perfil flex">
+                <img class="perfil-img" src="../img/img-perfil.png" alt="">
+                <a href="">Meu Perfil</a>
+            </div>
+        </div>
+    </header>
     <main class="main">
-        <header class="main__header">
-            <div class="container flex">
-                <div class="header-logo flex">
-                    <img class="logo-img" src="../imagens/img-header.png" alt="">
-                    <p>Doaçao de Sangue</p>
-                </div>
-                <nav class="header-nav ">
-                    <ul class="nav-list flex">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Hemocentros</a></li>
-                        <li><a href="#">Quem Pode Doar</a></li>
-                    </ul>
-                </nav>
-                <div class="header-perfil flex">
-                    <img class="perfil-img" src="../imagens/img-perfil.png" alt="">
-                    <a href="">Meu Perfil</a>
-                </div>
-            </div>
-        </header>
+        <div class="banner">
+            <img src="../img/banner.png" alt="">
+        </div>
         <div class="main__conteudo">
-            <div class="banner">
-                <img src="../imagens/banner.png" alt="">
-            </div>
+
             <div>
                 <div>
                     <div class="conteudo-box flex">
                         <h1 class="conteudo-title">COMO FUNCIONA?</h1>
-                        <img class="conteudo-img" src="../imagens/image-removebg-preview.png" alt="">
+                        <img class="conteudo-img" src="../img/image-removebg-preview.png" alt="">
                     </div>
-                    <div>
-                        <div>
+                    <div class="conjunto-cards flex">
+                        <div class="card  card-1">
                             <h3 class="conteudo-title">Cadastro</h3>
-                            <img class="" src="../imagens/tablet.png
+                            <img class="" src="../img/tablet.png
                             " alt="">
                             <p>Realize o seu cadastro no nosso site de forma 100% gratuita e veja para quem você pode
                                 doar.</p>
                         </div>
-                        <div>
+                        <div class="card ">
                             <h3 class="conteudo-title">Hemocentros</h3>
-                            <img src="../imagens/gota-sangue.png" alt="">
+                            <img src="../img/gota-sangue.png" alt="">
                             <p>Nesta página você encontra os hemocentros de todo o Brasil e o mais próximo de sua
                                 região.</p>
                         </div>
-                        <div>
+                        <div class="card">
                             <h3 class="conteudo-title">Doações</h3>
-                            <img src="../imagens/bolsa-sague.png" alt="">
+                            <img src="../img/bolsa-sague.png" alt="">
                             <p>Veja quais são os critérios para doar sangue e confira se você pode se tornar um doador.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="espaco">
                     <div class="conteudo-box flex">
                         <h1 class="conteudo-title">QUEM SOMOS</h1>
-                        <img class="conteudo-img" src="../imagens/image-removebg-preview.png" alt="">
+                        <img class="conteudo-img" src="../img/image-removebg-preview.png" alt="">
 
                     </div>
-                    <div>
-                        <img src="../imagens/gotinha.png" alt="">
-                        <p>
+                    <div class="container flex margin">
+                        <img class="img-joinha" src="../img/joinhA.png" alt="">
+                        <p class="tamanho-texto">
                             Texto sobre o site Texto sobre o site Texto sobre o site Texto sobre o site Texto sobre o
                             site Texto sobre o site blalblalbalblalbalblablablalTexto sobre o site Texto sobre o site
                             Texto sobre o site Texto sobre o site Texto sobre o site Texto sobre o site
@@ -94,16 +100,16 @@
                     </div>
 
                 </div>
-                <div>
-                    <div class="conteudo-box flex">
+                <div class="espaco">
+                    <div class="conteudo-box flex ">
                         <h1 class="conteudo-title">TIPOS SANGUÍNEOS</h1>
-                        <img class="conteudo-img" src="../imagens/image-removebg-preview.png" alt="">
+                        <img class="conteudo-img" src="../img/image-removebg-preview.png" alt="">
                     </div>
-                    <div>
-                        <img src="../imagens/gota-recebendo.png" alt="">
+                    <div class="container flex margin bloco-compatiblidade">
+                        <img class="tabela " src="../img/gota-recebendo.png" alt="">
                         <div>
                             <h3 class="conteudo-title">Compatibilidade</h3>
-                            <img src="../imagens/compatibilidade.png" alt="">
+                            <img class="tabela" src="../img/compatibilidade.png" alt="">
                         </div>
                     </div>
 
@@ -112,25 +118,30 @@
         </div>
 
     </main>
-    <footer class="">
-        <img src="../imagens/gota-thank.png" alt="">
-        <div>
-            <h3>Sobre o projeto</h3>
-            <p>Ao se cadastrar, você será avisado quando alguém na sua cidade precisar de sangue, via e-mail e WhatsApp.
-                Nossa missãoadores de sam.</p>
-        </div>
-        <div>
-            <h3>Contatos</h3>
-            <div><img src="" alt="">
-                <p>email</p>
+    <footer class="footer ">
+        <div class="flex">
+            <img class="footer-img container-2" src="../img/gota-thank.png" alt="">
+            <div class="container-4 footer-conteudos">
+                <h3>Sobre o projeto</h3>
+                <p>Ao se cadastrar, você será avisado quando alguém na sua cidade precisar de sangue, via e-mail e
+                    WhatsApp.
+                    Nossa missãoadores de sam.</p>
             </div>
-            <div><img src="" alt="">
-                <p>github</p>
+            <div class="container-2 footer-midias footer-conteudos">
+                <h3>Contatos</h3>
+                <div class="flex">
+                    <img class="footer-icon" src="../img/icon-carta.png" alt="">
+                    <p>email</p>
+                </div>
+                <div class="flex">
+                    <img class="footer-icon-2" src="../img/icons8-github.png" alt="">
+                    <p>github</p>
+                </div>
+                <div class="flex">
+                    <img class="footer-icon-2" src="../img/icon-instagram.png" alt="">
+                    <p>insta</p>
+                </div>
             </div>
-            <div><img src="" alt="">
-                <p>insta</p>
-            </div>
-
         </div>
     </footer>
 
