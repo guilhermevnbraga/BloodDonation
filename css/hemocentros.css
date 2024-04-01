@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.main{
+    margin: auto;
+    margin-top: 40px;
+    width: 74%;
+}
+
+.card-hemo{
+    border: 1px solid rgb(116, 116, 116);
+    margin-bottom: 2.5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main__hemocentros{
+    margin-top: 15px;
+}
+.field >h3,.cidade-hemo{
+    font-weight: bold;
+    color: rgb(231, 42, 42);
+}
+.field >h3{
+    font-size: 25px;
+}
+.cidade-hemo{
+    font-size: 18px;
+}
+.unidade-hemo,.field >p{
+    color: #4e4a47;
+}
+.sprite-map{
+    width: 20px;
+}
+.card-hemo > h4{
+    margin-top:2px;
+    margin-bottom:2px;
+
+}
+.card-hemo > p{
+    margin-bottom: 2px;
+}
