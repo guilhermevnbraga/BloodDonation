@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -7,7 +7,7 @@
 
 }
 
-.main__header{
+.main__header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,53 +16,68 @@
     color: white;
 
 }
-.main__conteudo{
+
+.main__conteudo {
     margin-top: 25px;
 }
-.container{
+
+.container {
     width: 90%;
     justify-content: space-around;
     align-items: center;
 }
-.header-logo,.header-perfil{
+
+.header-logo,
+.header-perfil {
     align-items: center;
 }
-.header-logo >p{
+
+.header-logo>p {
     font-weight: 500;
 }
 
-.flex{
+.flex {
 
     display: flex;
 
 }
-.nav-list{
+
+.nav-list {
     list-style-type: none;
-    width: 350px;
+    gap: 25px;
     justify-content: space-between;
+    align-items: center;
 }
-.logo-img, .perfil-img{
-    width: 35px;
+
+.logo-img,
+.perfil-img {
+    width: 30px;
 }
-.banner img{
-    max-width:100%  ;
+
+.banner img {
+    max-width: 100%;
 }
-.nav-list a, .header-perfil > a{
+
+.nav-list a,
+.header-perfil>a {
     text-decoration: none;
     color: white;
 
 }
-.conteudo-box{
+
+.conteudo-box {
     margin: auto;
 
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.conjunto-cards{
+
+.conjunto-cards {
     justify-content: space-around;
 }
-.card{
+
+.card {
     width: 300px;
     background-color: rgb(194, 189, 189);
     padding: 20px;
@@ -71,98 +86,160 @@
     justify-content: center;
 }
 
-.card > h3{
+.card>h3 {
     text-align: center;
 }
-.card-1 >img{
+
+.card-1>img {
     width: 150px;
     /* margin: 0px 0px ; */
     margin-left: 60px;
 }
-.conteudo-title{
+
+.conteudo-title {
     font-size: 30px;
     text-align: center;
 }
-.conteudo-img{
+
+.conteudo-img {
     width: 280px;
 }
-.footer{
+
+.footer {
     background-color: rgb(194, 189, 189);
     padding: 25px;
 
 }
-.footer > div{
+
+.footer>div {
     margin: auto;
     justify-content: space-between;
- 
+
     /* height: ; */
 }
-.footer-img{
+
+.footer-img {
     width: 300px;
 }
-.footer-icon{
+
+.footer-icon {
     width: 50px;
 }
-.footer-icon-2{
+
+.footer-icon-2 {
     width: 42px;
 }
-.footer-midias div{
+
+.footer-midias div {
     align-items: center;
 }
-.footer-conteudos{
+
+.footer-conteudos {
     padding-top: 43px;
 }
-.footer-conteudos> h3{
+
+.footer-conteudos>h3 {
     font-size: 35px
 }
-.footer-conteudos >p{
+
+.footer-conteudos>p {
     font-size: 20px;
 }
-.container-2{
+
+.container-2 {
     width: 300px;
 }
-.container-4{
+
+.container-4 {
     width: 400px;
 }
-.tabela{
+
+.tabela {
     width: 90%;
     margin: auto;
 }
-.container-3{
+
+.container-3 {
     width: 1200px;
     margin: auto;
 }
-.espaco{
+
+.espaco {
     margin-top: 40px;
 }
-.bloco-compatiblidade>img,.bloco-compatiblidade>div{
+
+.bloco-compatiblidade>img,
+.bloco-compatiblidade>div {
     margin-top: -10%;
 }
-.margin{
+
+.margin {
     margin: auto;
 }
 
-.tamanho-texto{
-    max-width:800px;
+.tamanho-texto {
+    max-width: 800px;
 }
-@media screen and (max-width: 1326px){
-    .img-joinha{
+
+.header__hamburgue {
+    width: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width: 1326px) {
+    .img-joinha {
         display: none;
     }
 
 }
+.is-none{
+    display: block;
+}
+
 @media screen and (max-width: 1120px) {
 
-    .conjunto-cards,.bloco-compatiblidade{
+    .conjunto-cards,
+    .bloco-compatiblidade {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .conjunto-cards{
+
+    .conjunto-cards {
         gap: 20px;
     }
-    .footer-img{
+
+    .footer-img {
         display: none;
     }
 
+}
+
+@media screen and (max-width: 801px) {
+    .header__hamburgue {
+        display: block;
+    }
+    .header-logo {
+
+    }
+
+    .is-none {
+        display: none;
+    }
+
+    .header-config {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header-conteudo{
+        display: block;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .modal-height{
+    height: 200px;
+}
 }

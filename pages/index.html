@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/btn_hamburgue.js" defer></script>
     <script src="../js/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,22 +17,25 @@
 
 <body>
     <header class="main__header">
-        <div class="container flex">
-            <div class="header-logo flex">
-                <img class="logo-img" src="../img/img-header.png" alt="">
-                <p>Doaçao de Sangue</p>
+        <div class="container flex header-conteudo">
+            <div class="header-config flex" >
+                <div class="header-logo flex">
+                    <img class="logo-img" src="../img/img-header.png" alt="">
+                    <p>Doaçao de Sangue</p>
+                </div>
+                <img class="header__hamburgue" src="../img/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
             </div>
-            <nav class="header-nav ">
+            <nav class="header-nav is-none">
                 <ul class="nav-list flex">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./hemocentros.html">Hemocentros</a></li>
-                    <li><a href="#">Quem Pode Doar</a></li>
+                    <li><a href="./QuemPodeDoar.html">Quem Pode Doar</a></li>
+                    <li class="header-perfil flex">
+                        <a href=""><img class="perfil-img" src="../img/img-perfil.png" alt=""></a>
+                    </li>
                 </ul>
             </nav>
-            <div class="header-perfil flex">
-                <img class="perfil-img" src="../img/img-perfil.png" alt="">
-                <a href="">Meu Perfil</a>
-            </div>
+
         </div>
     </header>
     <main class="main">
