@@ -1,17 +1,24 @@
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
-    overflow-X: hidden;
-
 }
 
 .main__header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 51px;
     background-color: rgb(228, 15, 15);
     color: white;
 
@@ -49,9 +56,13 @@
     align-items: center;
 }
 
-.logo-img,
-.perfil-img {
+.logo-img {
     width: 30px;
+}
+.perfil-img {
+    width: 36px;
+    border: solid black 1px;
+    border-radius: 50%;
 }
 
 .banner img {
@@ -63,6 +74,10 @@
     text-decoration: none;
     color: white;
 
+}
+
+.nav-item:hover {
+    animation: scaleUp 0.2s forwards;
 }
 
 .conteudo-box {
