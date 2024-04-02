@@ -22,7 +22,7 @@ body {
     justify-content: flex-end; 
     align-items: center;
     width: 50%; 
-    min-height: 100%; 
+    height: 100%; 
     padding: 20px; 
 }
 
@@ -47,6 +47,7 @@ body {
     align-items: flex-start;
     width: 100%;
     margin: 2px 0;
+    height: 10vh;
 }
 
 .field>input,
@@ -69,12 +70,17 @@ body {
 
 .registration {
     color: #000;
-    font-size: 32pt;
-    text-shadow: 2px 2px 4px rgba(252, 5, 5, 0.5); /* Adicionando sombra ao texto */
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(252, 5, 5, 0.5);
+    margin: 0px;
+}
+
+br {
+    height: 2px;
 }
 
 p {
-    visibility: hidden;
+    display: none;
 }
 
 .btn {
@@ -93,6 +99,9 @@ p {
     background: #ff0000;
     color: #fff;
     cursor: pointer;
+    margin: 0;
+    height: 4vh;
+    margin-top: 18px;
 }
 
 .btn .btnRegistration:hover {
