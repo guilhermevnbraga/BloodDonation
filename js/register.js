@@ -55,7 +55,7 @@ submit[0].addEventListener('click', (event) => {
         bloodType: user.bloodType,
     };
 
-    const itemName = 'user' + localStorage.length();
+    const itemName = 'user' + localStorage.length;
 
     localStorage.setItem(itemName, data);
     console.log(localStorage.getItem(itemName));
