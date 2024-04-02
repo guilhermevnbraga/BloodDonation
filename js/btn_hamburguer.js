@@ -1,4 +1,4 @@
-const btnHamburgue = document.getElementsByClassName('header__hamburgue')[0];
+const btnHamburguer = document.getElementsByClassName('header__hamburguer')[0];
 const menu = document.getElementsByClassName('header-nav')[0];
 const header = document.querySelector('.main__header')
 console.log(header)
@@ -8,6 +8,6 @@ const outMenu = ()=>{
         header.classList.toggle('modal-height')
 }
 
-btnHamburgue.addEventListener('click', ()=>{
+btnHamburguer.addEventListener('click', ()=>{
     outMenu()
 });

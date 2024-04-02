@@ -181,7 +181,7 @@
     max-width: 800px;
 }
 
-.header__hamburgue {
+.header__hamburguer {
     width: 28px;
     cursor: pointer;
     display: none;
@@ -218,7 +218,7 @@
 }
 
 @media screen and (max-width: 801px) {
-    .header__hamburgue {
+    .header__hamburguer {
         display: block;
     }
     .header-logo {
