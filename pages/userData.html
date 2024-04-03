@@ -5,18 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Doação de Sangue</title>
-        <link rel="stylesheet" href="../css/register.css">
+        <link rel="stylesheet" href="../css/userData.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
         <link rel="icon" href="../img/gotinha_icon.png" type="image/png">
-        <script src="../js/register.js" defer></script>
+        <script src="../js/userData.js" defer></script>
     </head>
 
 <body>
     <main class="main">
         <form id="rightRegistration" class="rightRegistration">
             <div class="cardRegistration">
-                <h1 class="registration">CADASTRE-SE</h1><br>
-                <h1 class="registration">SALVE VIDAS</h1>
+                <h1 class="registration">DADOS CADASTRADOS</h1>
                 <div class="field">
                     <label for="name">Nome completo *</label>
                     <input type="text" id="name" placeholder="Nome completo">
@@ -42,6 +41,7 @@
                     <input type="text" id="Weight" placeholder="Peso">
                     <p>Obrigatório preencher peso</p>
                 </div>
+    
                 <div class="field">
                     <label for="address">Endereço completo *</label>
                     <input type="text" id="address" placeholder="Endereço">
@@ -60,14 +60,15 @@
                         <option value="O+">O+</option>
                         <option value="O-">O-</option>
                     </select>
-                </div>
-                <div class="field">
-                    <label for="password">Senha *</label>
-                    <input type="text" id="password" placeholder="Senha">
-                    <p>Obrigatório preencher telefone</p>
+                    <div class="field">
+                        <label for="password">Senha *</label>
+                        <input type="text" id="password" placeholder="Senha">
+                        <p>Obrigatório preencher telefone</p>
+                    </div>
                 </div>
                 <div class="btn">
-                    <button type="submit" class="btnRegistration">Cadastrar</button>
+                    <button type="submit" class="btnRegistration">Alterar</button>
+                    <button class="btnRegistration">Sair</button>
                 </div>
             </div>
         </form>

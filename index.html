@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doação de Sangue</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link rel="icon" href="img/gotinha_icon.png" type="image/png">
     <script src="js/btn_hamburguer.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -30,10 +31,14 @@
                     <li class="nav-item"><a href="./index.html">Home</a></li>
                     <li class="nav-item"><a href="pages/hemocentros.html">Hemocentros</a></li>
                     <li class="nav-item"><a href="pages/QuemPodeDoar.html">Quem Pode Doar</a></li>
-                    <li class="header-perfil flex">
-                        <a class="nav-item" href="pages/register.html"><img class="perfil-img" src="img/img-perfil.png" alt=""></a>
+                    <li class="header-perfil">
+                        <a id="perfil" href="pages/register.html"><img class="perfil-img nav-item" src="img/img-perfil.png" alt=""></a>
                     </li>
                 </ul>
+            </nav>
+            <nav class="perfil-nav">
+                <button class="nav-item" id="login">Login</button>
+                <button class="nav-item" id="register">Registrar</button>
             </nav>
 
         </div>

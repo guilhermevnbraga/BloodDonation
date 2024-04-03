@@ -57,8 +57,8 @@ submit[0].addEventListener('click', (event) => {
 
     const itemName = 'user' + localStorage.length;
 
-    localStorage.setItem(itemName, data);
-    console.log(localStorage.getItem(itemName));
+    localStorage.setItem(itemName, JSON.stringify(data)); // lembrar de usar JSON.parse pra pegar os users
+    localStorage.setItem('logado', true)
 
     window.location.href = '../index.html';
 });

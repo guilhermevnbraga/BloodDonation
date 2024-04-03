@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../img/Blooddonation-pana.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: #D14A4A;
+}
+
+.rightRegistration {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    width: 50%; 
+    height: 100%; 
+    padding: 20px; 
+}
+
+.cardRegistration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    min-height: 80%; 
+    padding: 30px 36px;
+    background: rgba(217, 217, 217, 0.6); 
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #000;
+    overflow-y: auto;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 2px 0;
+    height: 10.5vh;
+}
+
+.field>input,
+.field>select {
+    width: 100%;
+    border-radius: 10px;
+    padding: 13px;
+    background: rgba(217, 217, 217, 0.6);
+    color: #000;
+    font-size: 12pt;
+    box-shadow: #000;
+    box-sizing: border-box;
+    margin-top: 0px; 
+}
+
+.field>label {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.registration {
+    color: #000;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(252, 5, 5, 0.5);
+    margin: 0px;
+}
+
+p {
+    display: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.btnRegistration {
+    width: 50%;
+    border-radius: 10px;
+    font-weight: bolder;
+    border: none;
+    background: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    height: 4vh;
+    margin: 10px;
+    margin-top: 18px;
+    padding: 6px 0;
+}
+
+.btnRegistration:hover {
+    box-shadow: 0px 6px 14px -6px #070707;
+}
+
+.erro input {
+    border-color: #ff0000;
+}
+
+.erro p {
+    margin: 6px;
+    font-size: 13px;
+    color: #ff0000;
+    visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+    .rightRegistration {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .cardRegistration {
+        width: 100%; 
+    }
+}
