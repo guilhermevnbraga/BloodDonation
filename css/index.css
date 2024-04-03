@@ -21,7 +21,6 @@
     height: 51px;
     background-color: rgb(228, 15, 15);
     color: #fafafa;
-
 }
 
 .main__conteudo {
@@ -45,9 +44,12 @@
 }
 
 .flex {
-
     display: flex;
+}
 
+.col {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-list {
@@ -57,7 +59,7 @@
     align-items: center;
 }
 
-.perfil-nav button{
+.perfil-nav button {
     margin: 10px;
     font-size: 16px;
     font-weight: bolder;
@@ -88,7 +90,7 @@
 }
 
 .nav-list a,
-.header-perfil>a {
+.header-perfil > a {
     text-decoration: none;
     color: #fafafa;
 }
@@ -119,11 +121,11 @@
     justify-content: center;
 }
 
-.card>h3 {
+.card > h3 {
     text-align: center;
 }
 
-.card-1>img {
+.card-1 > img {
     width: 150px;
     /* margin: 0px 0px ; */
     margin-left: 60px;
@@ -141,10 +143,9 @@
 .footer {
     background-color: rgb(194, 189, 189);
     padding: 25px;
-
 }
 
-.footer>div {
+.footer > div {
     margin: auto;
     justify-content: space-between;
 
@@ -171,11 +172,11 @@
     padding-top: 43px;
 }
 
-.footer-conteudos>h3 {
-    font-size: 35px
+.footer-conteudos > h3 {
+    font-size: 35px;
 }
 
-.footer-conteudos>p {
+.footer-conteudos > p {
     font-size: 20px;
 }
 
@@ -201,8 +202,8 @@
     margin-top: 40px;
 }
 
-.bloco-compatiblidade>img,
-.bloco-compatiblidade>div {
+.bloco-compatiblidade > img,
+.bloco-compatiblidade > div {
     margin-top: -10%;
 }
 
@@ -220,19 +221,16 @@
     display: none;
 }
 
-
 @media screen and (max-width: 1326px) {
     .img-joinha {
         display: none;
     }
-
 }
-.is-none{
+.is-none {
     display: block;
 }
 
 @media screen and (max-width: 1120px) {
-
     .conjunto-cards,
     .bloco-compatiblidade {
         flex-direction: column;
@@ -247,15 +245,11 @@
     .footer-img {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 801px) {
     .header__hamburguer {
         display: block;
-    }
-    .header-logo {
-
     }
 
     .is-none {
@@ -266,13 +260,27 @@
         justify-content: space-between;
         width: 100%;
     }
-    .header-conteudo{
+    .header-conteudo {
         display: block;
     }
-    .nav-list{
+    .nav-list {
         flex-direction: column;
     }
-    .modal-height{
-    height: 200px;
-}
+    .modal-height {
+        height: 270px;
+    }
+    .perfil-nav button{
+        margin: 0;
+        margin-top: 30px;
+        background-color: transparent;
+        font-weight: 400;
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        width: auto;
+        text-shadow: none;
+    }
+    .perfil-nav button:hover {
+        box-shadow: none;
+    }
 }
