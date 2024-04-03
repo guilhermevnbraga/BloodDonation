@@ -3,10 +3,10 @@ const email = document.getElementById("email");
 const birthDate = document.getElementById("birthDate");
 const cpf = document.getElementById("cpf");
 const weight = document.getElementById("Weight");
-const phoneNumber = document.getElementById("phoneNumber");
 const address = document.getElementById("address");
 const bloodType = document.getElementById("bloodType");
 const submit = document.getElementsByClassName("btnRegistration");
+const password = document.getElementById("password");
 
 class User {
     constructor(
@@ -15,22 +15,22 @@ class User {
         birthDate,
         cpf,
         weight,
-        phoneNumber,
         address,
-        bloodType
+        bloodType,
+        password
     ) {
         this.name = name;
         this.email = email;
         this.birthDate = birthDate;
         this.cpf = cpf;
         this.weight = weight;
-        this.phoneNumber = phoneNumber;
         this.address = address;
         this.bloodType = bloodType;
+        this.password = password;
     }
 }
 
-submit[0].addEventListener('click', (event) => {
+submit[0].addEventListener("click", (event) => {
     event.preventDefault();
 
     const user = new User(
@@ -39,9 +39,9 @@ submit[0].addEventListener('click', (event) => {
         birthDate.value,
         cpf.value,
         weight.value,
-        phoneNumber.value,
         address.value,
-        bloodType.value
+        bloodType.value,
+        password.value
     );
 
     const data = {
@@ -50,15 +50,15 @@ submit[0].addEventListener('click', (event) => {
         birthDate: user.birthDate,
         cpf: user.cpf,
         weight: user.weight,
-        phoneNumber: user.phoneNumber,
         address: user.address,
         bloodType: user.bloodType,
+        password: user.password,
     };
 
-    const itemName = 'user' + localStorage.length;
+    const itemName = "user" + localStorage.length;
 
     localStorage.setItem(itemName, JSON.stringify(data)); // lembrar de usar JSON.parse pra pegar os users
-    localStorage.setItem('logado', true)
+    localStorage.setItem("logado", 'true');
 
-    window.location.href = '../index.html';
+    window.location.href = "../index.html";
 });

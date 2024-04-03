@@ -7,7 +7,7 @@ console.log(header)
 const outMenu = ()=>{
         menu.classList.toggle('is-none');
         menu2.classList.toggle('is-none');
-        menu2.classList.toggle('col');
+        menu2.classList.toggle('col')
         header.classList.toggle('modal-height')
 }
 

@@ -41,6 +41,13 @@
 .header-perfil {
     display: none;
     align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#perfil-title {
+    margin-left: 15px;
+    color: #fafafa;
 }
 
 .flex {
@@ -52,6 +59,11 @@
     flex-direction: column;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 .nav-list {
     list-style-type: none;
     gap: 25px;
@@ -60,6 +72,8 @@
 }
 
 .perfil-nav button {
+    justify-content: center;
+    align-items: center;
     margin: 10px;
     font-size: 16px;
     font-weight: bolder;
@@ -81,8 +95,10 @@
 }
 .perfil-img {
     width: 36px;
-    border: solid black 1px;
+    border: solid #fafafa 1px;
     border-radius: 50%;
+    background-color: #fafafa;
+    cursor: default;
 }
 
 .banner img {
@@ -148,8 +164,6 @@
 .footer > div {
     margin: auto;
     justify-content: space-between;
-
-    /* height: ; */
 }
 
 .footer-img {
@@ -227,7 +241,7 @@
     }
 }
 .is-none {
-    display: block;
+    display: flex;
 }
 
 @media screen and (max-width: 1120px) {
@@ -269,6 +283,9 @@
     .modal-height {
         height: 270px;
     }
+    .perfil-nav {
+        justify-content: center;
+    }
     .perfil-nav button{
         margin: 0;
         margin-top: 30px;
@@ -279,6 +296,9 @@
         border-radius: 0;
         width: auto;
         text-shadow: none;
+    }
+    .perfil-nav a {
+        margin-top: 30px;
     }
     .perfil-nav button:hover {
         box-shadow: none;
