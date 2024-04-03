@@ -2,7 +2,6 @@ const mainBloodCenters = document.querySelector('.main__hemocentros')
 const estateSelect = document.querySelector('#estado')
 
 let value = estateSelect.options[estateSelect.selectedIndex].value
-console.log(value)
 async function fetchData() {
     const res = await fetch('../js/hemocentros.json')
     const data = await res.json()
@@ -33,12 +32,10 @@ function createCard(state, unitTitle, informationUnit, tel, site) {
 async function exposeBloodCenters() {
     let state = estateSelect.options[estateSelect.selectedIndex].value
     const data = await fetchData()
-    console.log(data)
     if (state == '') {
         for (let i = 0; i < data.estados.length; ++i) {
             for (let k = 0; k < data.estados[i].estados.length; ++k) {
                 for (let j = 0; j < data.estados[i].estados[k].unidades.length; ++j) {
-                    console.log(j)
                     createCard(data.estados[i].estados[k].nome, data.estados[i].estados[k].unidades[j].title, data.estados[i].estados[k].unidades[j].the_content, data.estados[i].estados[k].unidades[j].tel, data.estados[i].estados[k].unidades[j].map)
                 }
             }
@@ -48,7 +45,6 @@ async function exposeBloodCenters() {
             for(let k =0; k <data.estados[i].estados.length;++k){
                 if(state == data.estados[i].estados[k].nome ){
                     for(let j =0; j <data.estados[i].estados[k].unidades.length;++j){
-                        console.log(j)
                         createCard(data.estados[i].estados[k].nome,data.estados[i].estados[k].unidades[j].title,data.estados[i].estados[k].unidades[j].the_content,data.estados[i].estados[k].unidades[j].tel,data.estados[i].estados[k].unidades[j].map)
                     }
                     break
