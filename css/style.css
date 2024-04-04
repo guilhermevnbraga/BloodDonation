@@ -34,10 +34,6 @@
     align-items: center;
 }
 
-.container p {
-    visibility: hidden;
-}
-
 .header-logo {
     align-items: center;
     font-weight: 500;
