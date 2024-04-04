@@ -15,12 +15,16 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    background-color: #f3f3f3;
+}
+
 .main__header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 51px;
-    background-color: rgb(228, 15, 15);
+    height: 60px;
+    background-color: rgb(218, 17, 17);
     color: #fafafa;
 }
 
@@ -130,28 +134,55 @@
     align-items: center;
 }
 
+.content-box-1 {
+    margin: 50px 0 50px 0;
+}
+
 .conjunto-cards {
     visibility: hidden;
+    display: flex;
     justify-content: space-around;
+    margin-bottom: 150px;
 }
 
 .card {
     width: 300px;
-    background-color: rgb(194, 189, 189);
+    display: flex;
+    background-color: #D9D9D9;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 1px 10px #999999;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .card>h3 {
     text-align: center;
 }
 
-.card-1>img {
+.card-1 img {
     width: 150px;
-    /* margin: 0px 0px ; */
-    margin-left: 60px;
+}
+
+.card-1 .conteudo-title {
+    margin-bottom: 25px;
+}
+
+.card-1 p {
+    margin-top: 20px;
+}
+
+.card-2 .conteudo-title {
+    margin-bottom: 25px;
+}
+
+.card-2 img {
+    width: 150px;
+}
+
+.card-2 p {
+    margin-top: 20px;
 }
 
 .conteudo-title {
@@ -223,7 +254,7 @@
 }
 
 .espaco {
-    margin-top: 40px;
+    margin: 20px 0 50px 0;
 }
 
 .bloco-compatiblidade>img,

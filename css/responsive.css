@@ -16,8 +16,13 @@
         align-items: center;
     }
 
+    .card {
+        width: 400px;
+        height: 400px;
+    }
+
     .conjunto-cards {
-        gap: 20px;
+        gap: 30px;
     }
 
     .footer-img {
@@ -73,5 +78,11 @@
 
     .perfil-nav button:hover {
         box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 567px){
+    .card {
+        width: 300px;
     }
 }
