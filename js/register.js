@@ -6,6 +6,15 @@ const weight = document.getElementById("Weight");
 const address = document.getElementById("address");
 const bloodType = document.getElementById("bloodType");
 const submit = document.getElementsByClassName("btnRegistration");
+const date = new Date();
+
+actualMonth = date.getMonth();
+actualDay = date.getDay();
+minYear = date.getFullYear() - 69;
+maxYear = date.getFullYear() - 16;
+console.log(actualDay)
+birthDate.min = minYear + '-' + '0' + actualMonth + '-' + '0' + actualDay;
+birthDate.max = maxYear + '-' + '0' + actualMonth + '-' + '0' + actualDay;
 
 class User {
     constructor(
