@@ -30,30 +30,21 @@ function createCard(state, unitTitle, informationUnit, tel, site) {
 }
 
 async function exposeBloodCenters() {
-    let state = estateSelect.options[estateSelect.selectedIndex].value
-    const data = await fetchData()
-    if (state == '') {
-        for (let i = 0; i < data.estados.length; ++i) {
-            for (let k = 0; k < data.estados[i].estados.length; ++k) {
-                for (let j = 0; j < data.estados[i].estados[k].unidades.length; ++j) {
-                    createCard(data.estados[i].estados[k].nome, data.estados[i].estados[k].unidades[j].title, data.estados[i].estados[k].unidades[j].the_content, data.estados[i].estados[k].unidades[j].tel, data.estados[i].estados[k].unidades[j].map)
-                }
-            }
-        }
-    }else{
-        for(let i=0; i < data.estados.length;++i){
-            for(let k =0; k <data.estados[i].estados.length;++k){
-                if(state == data.estados[i].estados[k].nome ){
-                    for(let j =0; j <data.estados[i].estados[k].unidades.length;++j){
-                        createCard(data.estados[i].estados[k].nome,data.estados[i].estados[k].unidades[j].title,data.estados[i].estados[k].unidades[j].the_content,data.estados[i].estados[k].unidades[j].tel,data.estados[i].estados[k].unidades[j].map)
-                    }
-                    break
-                }
-            }
-        }
+    const state = estateSelect.options[estateSelect.selectedIndex].value;
+    const data = await fetchData();
+
+    let estados = data.estados.flatMap(est => est.estados);
+    if (state) {
+        estados = estados.filter(est => est.nome === state);
     }
 
+    estados.forEach(est => {
+        est.unidades.forEach(unit => {
+            createCard(est.nome, unit.title, unit.the_content, unit.tel, unit.map);
+        });
+    });
 }
+
 function apagarCards(){
     const cards = document.querySelectorAll('.card-hemo')
     for(let i = 0; i < cards.length; ++i){
