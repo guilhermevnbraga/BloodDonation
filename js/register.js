@@ -7,8 +7,6 @@ const address = document.getElementById("address");
 const bloodType = document.getElementById("bloodType");
 const submit = document.getElementsByClassName("btnRegistration");
 
-let trigger = false;
-
 class User {
     constructor(
         userName,
