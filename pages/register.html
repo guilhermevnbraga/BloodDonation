@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
         <link rel="icon" href="../img/gotinha_icon.png" type="image/png">
         <script src="../js/register.js" defer></script>
+        <script src="../js/hiddenPassword.js" defer></script>
     </head>
 
 <body>
@@ -18,7 +19,7 @@
                 <h1 class="registration">CADASTRE-SE</h1><br>
                 <h1 class="registration">SALVE VIDAS</h1>
                 <div class="field">
-                    <label for="name">Nome completo *</label>
+                    <label for="name">Nome Completo *</label>
                     <input type="text" id="name" placeholder="Nome completo">
                     <p>Obrigatório preencher nome</p>
                 </div>
@@ -28,7 +29,7 @@
                     <p>Obrigatório preencher email</p>
                 </div>
                 <div class="field">
-                    <label for="birthDate">Data de nascimento *</label>
+                    <label for="birthDate">Data de Nascimento *</label>
                     <input type="date" id="birthDate" placeholder="Data de nascimento">
                     <p>Obrigatório preencher data de nascimento</p>
                 </div>
@@ -43,12 +44,12 @@
                     <p>Obrigatório preencher peso</p>
                 </div>
                 <div class="field">
-                    <label for="address">Endereço completo *</label>
+                    <label for="address">Endereço Completo *</label>
                     <input type="text" id="address" placeholder="Endereço">
                     <p>Obrigatório preencher endereço</p>
                 </div>
                 <div class="field">
-                    <label for="bloodType">Tipo sanguíneo </label>
+                    <label for="bloodType">Tipo Sanguíneo </label>
                     <select name="bloodType" id="bloodType">
                         <option value="">Selecione o tipo sanguíneo</option>
                         <option value="A+">A+</option>
@@ -62,8 +63,11 @@
                     </select>
                 </div>
                 <div class="field">
-                    <label for="password">Senha *</label>
-                    <input type="text" id="password" placeholder="Senha">
+                    <div id="password-label">
+                        <label for="password">Senha *</label>
+                        <button id="eye"></button>
+                    </div>
+                    <input type="password" id="password" placeholder="Senha">
                     <p>Obrigatório preencher telefone</p>
                 </div>
                 <div class="btn">

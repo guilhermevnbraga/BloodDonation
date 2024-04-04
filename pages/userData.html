@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
         <link rel="icon" href="../img/gotinha_icon.png" type="image/png">
         <script src="../js/userData.js" defer></script>
+        <script src="../js/hiddenPassword.js" defer></script>
     </head>
 
 <body>
@@ -62,8 +63,11 @@
                     </select>
                 </div>
                 <div class="field">
-                    <label for="password">Senha *</label>
-                    <input type="text" id="password" placeholder="Senha">
+                    <div id="password-label">
+                        <label for="password">Senha *</label>
+                        <button id="eye"></button>
+                    </div>
+                    <input type="password" id="password" placeholder="Senha">
                     <p>Obrigatório preencher telefone</p>
                 </div>
                 <div class="btn">

@@ -6,10 +6,12 @@ const weight = document.getElementById("Weight");
 const address = document.getElementById("address");
 const bloodType = document.getElementById("bloodType");
 const submit = document.getElementsByClassName("btnRegistration");
-const password = document.getElementById("password");
+
+let trigger = false;
 
 class User {
     constructor(
+        userName,
         name,
         email,
         birthDate,
@@ -17,8 +19,10 @@ class User {
         weight,
         address,
         bloodType,
-        password
+        password,
+        logged
     ) {
+        this.userName = userName;
         this.name = name;
         this.email = email;
         this.birthDate = birthDate;
@@ -27,13 +31,17 @@ class User {
         this.address = address;
         this.bloodType = bloodType;
         this.password = password;
+        this.logged = logged;
     }
 }
 
 submit[0].addEventListener("click", (event) => {
     event.preventDefault();
 
+    itemName = "user" + localStorage.length;
+
     const user = new User(
+        itemName,
         name.value,
         email.value,
         birthDate.value,
@@ -41,10 +49,12 @@ submit[0].addEventListener("click", (event) => {
         weight.value,
         address.value,
         bloodType.value,
-        password.value
+        password.value,
+        true
     );
 
     const data = {
+        userName: user.userName,
         name: user.name,
         email: user.email,
         birthDate: user.birthDate,
@@ -53,12 +63,10 @@ submit[0].addEventListener("click", (event) => {
         address: user.address,
         bloodType: user.bloodType,
         password: user.password,
+        logged: user.logged,
     };
 
-    const itemName = "user" + localStorage.length;
-
-    localStorage.setItem(itemName, JSON.stringify(data)); // lembrar de usar JSON.parse pra pegar os users
-    localStorage.setItem("logado", 'true');
+    localStorage.setItem(data.userName, JSON.stringify(data));
 
     window.location.href = "../index.html";
 });

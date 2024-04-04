@@ -47,11 +47,10 @@ body {
     align-items: flex-start;
     width: 100%;
     margin: 2px 0;
-    height: 10vh;
+    height: 10.5vh;
 }
 
-.field>input,
-.field>select {
+.field>input {
     width: 100%;
     border-radius: 10px;
     padding: 13px;
@@ -75,10 +74,6 @@ body {
     margin: 0px;
 }
 
-br {
-    height: 2px;
-}
-
 p {
     display: none;
 }
@@ -91,7 +86,7 @@ p {
     padding: 10px 0;
 }
 
-.btn .btnRegistration {
+.btnRegistration {
     width: 50%;
     border-radius: 10px;
     font-weight: bolder;
@@ -99,18 +94,14 @@ p {
     background: #ff0000;
     color: #fff;
     cursor: pointer;
-    margin: 0;
     height: 4vh;
-    margin-top: 18px;
-}
-
-.btn .btnRegistration:hover {
-    box-shadow: 0px 6px 14px -6px #070707;
-}
-
-.btn button {
     margin: 10px;
+    margin-top: 18px;
     padding: 6px 0;
+}
+
+.btnRegistration:hover {
+    box-shadow: 0px 6px 14px -6px #070707;
 }
 
 .erro input {
@@ -147,12 +138,11 @@ p {
 
 @media (orientation: portrait) {
     #eye {
-        width: 2vw;
-        height: 1.5vh;
+        background-size: 2.4vw 1.6vh;
+        width: 2.4vw;
     }
 }
 
-/* Media queries para tornar responsivo */
 @media screen and (max-width: 768px) {
     .rightRegistration {
         width: 100%; 
@@ -164,7 +154,8 @@ p {
     }
 
     #eye {
-        width: 3vw;
+        background-size: 3.6vw 1.6vh;
+        width: 3.6vw;
         height: 2.5vh;
     }
 }
