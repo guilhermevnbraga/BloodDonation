@@ -127,11 +127,12 @@ body {
 }
 
 .conteudo-box {
-    margin: auto;
-    visibility: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    visibility: hidden;
+    
 }
 
 .content-box-1 {
@@ -196,9 +197,10 @@ body {
 }
 
 .footer {
+    width: 100%;
     visibility: hidden;
     background-color: rgb(194, 189, 189);
-    padding: 25px;
+    padding: 5px;
 }
 
 .footer>div {
@@ -242,10 +244,14 @@ body {
     width: 400px;
 }
 
+.gota-recebendo{
+    width: 22vw;
+}
+
 .tabela {
     visibility: hidden;
     width: 90%;
-    margin: auto;
+    margin-bottom: 20px;
 }
 
 .container-3 {
