@@ -126,11 +126,11 @@ p {
     padding: 6px 0;
 }*/
 
-.erro input {
+.error input {
     border-color: #ff0000;
 }
 
-.erro p {
+.error p {
     margin: 6px;
     font-size: 13px;
     color: #ff0000;
