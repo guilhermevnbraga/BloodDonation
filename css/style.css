@@ -245,6 +245,7 @@ body {
 }
 
 .gota-recebendo{
+    visibility: hidden;
     width: 22vw;
 }
 
