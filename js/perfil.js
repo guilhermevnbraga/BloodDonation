@@ -1,44 +1,47 @@
-const perfil = document.getElementById("perfil");
-const login = document.getElementById("login");
-const register = document.getElementById("register");
-const headerPerfil = document.getElementsByClassName("header-perfil")[0];
-const perfilNav = document.getElementsByClassName("perfil-nav")[0];
+document.addEventListener("DOMContentLoaded", function() {
+    const perfil = document.getElementById("perfil");
+    const login = document.getElementById("login");
+    const register = document.getElementById("register");
+    const headerPerfil = document.getElementsByClassName("header-perfil")[0];
+    const perfilNav = document.getElementsByClassName("perfil-nav")[0];
 
-const logged = () => {
-    for(let c = 0; c < localStorage.length; c++) {
-        let data = JSON.parse(localStorage.getItem('user' + c))
-        if(data.logged === true) {
-            return data
+    const logged = () => {
+        for(let c = 0; c < localStorage.length; c++) {
+            let data = JSON.parse(localStorage.getItem('user' + c))
+            if(data && data.logged === true) {
+                return data
+            }
         }
+    
+        return false
+    }
+    
+
+    if (logged()) {
+        login.style.display = "none";
+        register.style.display = "none";
+        headerPerfil.style.display = "flex";
+    } else {
+        login.style.display = "flex";
+        register.style.display = "flex";
+        headerPerfil.style.display = "none";
     }
 
-    return false
-}
+    perfil.addEventListener("click", (e) => {
+        e.preventDefault();
 
-if (logged()) {
-    login.style.display = "none";
-    register.style.display = "none";
-    headerPerfil.style.display = "flex";
-} else {
-    login.style.display = "flex";
-    register.style.display = "flex";
-    headerPerfil.style.display = "none";
-}
+        window.location.href = "../pages/userData.html";
+    });
 
-perfil.addEventListener("click", (e) => {
-    e.preventDefault();
+    login.addEventListener("click", (e) => {
+        e.preventDefault();
 
-    window.location.href = "../pages/userData.html";
-});
+        window.location.href = "../pages/login.html";
+    });
 
-login.addEventListener("click", (e) => {
-    e.preventDefault();
+    register.addEventListener("click", (e) => {
+        e.preventDefault();
 
-    window.location.href = "../pages/login.html";
-});
-
-register.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    window.location.href = "../pages/register.html";
+        window.location.href = "../pages/register.html";
+    });
 });

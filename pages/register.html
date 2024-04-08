@@ -16,8 +16,7 @@
     <main class="main">
         <form id="rightRegistration" class="rightRegistration">
             <div class="cardRegistration">
-                <h1 class="registration">CADASTRE-SE</h1><br>
-                <h1 class="registration">SALVE VIDAS</h1>
+                <h1 class="registration">CADASTRE-SE<br> SALVE VIDAS</h1>
                 <div class="field">
                     <label for="name">Nome Completo *</label>
                     <input type="text" id="name" placeholder="Nome completo">
@@ -27,11 +26,6 @@
                     <label for="email">Email *</label>
                     <input type="text" id="email" placeholder="Email">
                     <p>Obrigatório preencher email</p>
-                </div>
-                <div class="field">
-                    <label for="birthDate">Data de Nascimento *</label>
-                    <input type="date" max="2018-04-04" min="1955-04-04" id="birthDate" placeholder="Data de nascimento">
-                    <p>Obrigatório preencher data de nascimento</p>
                 </div>
                 <div class="field">
                     <label for="cpf">CPF *</label>
@@ -49,6 +43,19 @@
                     <p>Obrigatório preencher endereço</p>
                 </div>
                 <div class="field">
+                    <div id="password-label">
+                        <label for="password">Senha *</label>
+                        <button id="eye"></button>
+                    </div>
+                    <input type="password" id="password" placeholder="Senha">
+                    <p>Obrigatório preencher senha</p>
+                </div>
+                <div class="field">
+                    <label for="birthDate">Data de Nascimento *</label>
+                    <input type="date" id="birthDate" placeholder="Data de nascimento" max="2018-04-04" min="1955-04-04">
+                    <p>Obrigatório preencher data de nascimento</p>
+                </div>
+                <div class="field">
                     <label for="bloodType">Tipo Sanguíneo </label>
                     <select name="bloodType" id="bloodType">
                         <option value="">Selecione o tipo sanguíneo</option>
@@ -61,14 +68,6 @@
                         <option value="O+">O+</option>
                         <option value="O-">O-</option>
                     </select>
-                </div>
-                <div class="field">
-                    <div id="password-label">
-                        <label for="password">Senha *</label>
-                        <button id="eye"></button>
-                    </div>
-                    <input type="password" id="password" placeholder="Senha">
-                    <p>Obrigatório preencher telefone</p>
                 </div>
                 <div class="btn">
                     <button type="submit" class="btnRegistration">Cadastrar</button>

@@ -75,7 +75,7 @@ body {
 }
 
 p {
-    display: none;
+    visibility: hidden;
 }
 
 .btn {
