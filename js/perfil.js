@@ -30,18 +30,18 @@ document.addEventListener("DOMContentLoaded", function() {
     perfil.addEventListener("click", (e) => {
         e.preventDefault();
 
-        window.location.href = "../pages/userData.html";
+        window.location.href = "/BloodDonation/pages/userData.html";
     });
 
     login.addEventListener("click", (e) => {
         e.preventDefault();
 
-        window.location.href = "../pages/login.html";
+        window.location.href = "/BloodDonation/pages/login.html";
     });
 
     register.addEventListener("click", (e) => {
         e.preventDefault();
 
-        window.location.href = "../pages/register.html";
+        window.location.href = "/BloodDonation/pages/register.html";
     });
 });
