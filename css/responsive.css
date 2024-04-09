@@ -13,7 +13,8 @@
 
 @media screen and (max-width: 1120px) {
     .conjunto-cards,
-    .bloco-compatiblidade {
+    .bloco-compatiblidade
+     {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -82,10 +83,35 @@
     .perfil-nav button:hover {
         box-shadow: none;
     }
+
+    .content h1 {
+        font-size: 25px;
+        
+    }
+    
+    .criteria{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 567px){
     .card {
         width: 300px;
     }
+
+.criteria img{
+    display: none;
 }
+
+.content p{
+    font-size: 17px
+
+}
+
+.criteria{
+    width: 100%;
+    height: 100%;
+}
+ 
+} 
+
