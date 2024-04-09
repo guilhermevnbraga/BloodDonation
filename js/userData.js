@@ -54,3 +54,12 @@ buttons[1].addEventListener("click", (e) => {
 
     window.location.href = "../index.html";
 });
+
+buttons[2].addEventListener("click", (e) => {
+    e.preventDefault()
+
+    data.logged = false;
+    localStorage.setItem(data.userName, JSON.stringify(data))
+
+    window.location.href = "../index.html";
+});
