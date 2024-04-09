@@ -82,6 +82,10 @@
     .perfil-nav button:hover {
         box-shadow: none;
     }
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 567px){
