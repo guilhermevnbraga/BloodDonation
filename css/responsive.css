@@ -83,15 +83,6 @@
     .perfil-nav button:hover {
         box-shadow: none;
     }
-
-    .content h1 {
-        font-size: 25px;
-        
-    }
-    
-    .criteria{
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 567px){
