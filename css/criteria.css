@@ -1,29 +1,29 @@
 .fullBody {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Isso é para garantir que o conteúdo fique centralizado na tela inteira */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
 .criteria {
     display: flex;
-    align-items: center; /* Alinha os itens verticalmente */
-    width: 80%; /* Ajuste conforme necessário */
+    align-items: center; 
+    width: 80%; 
     height: 91%;
-    max-width: 500%; /* Ajuste conforme necessário */
+    max-width: 500%; 
     background-color: rgb(191, 188, 188);
 }
 
 .criteria .image {
-    flex: 0 0 auto; /* Tamanho automático para a imagem */
-    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    flex: 0 0 auto; 
+    margin-right: 20px;
 }
 
 .criteria .content {
-    flex: 1; /* Ocupa o restante do espaço disponível */
+    flex: 1; 
 }
 
 .criteria img {
-    max-width: 100%; /* Ajuste conforme necessário */
+    max-width: 100%; 
     height: auto;
 }
