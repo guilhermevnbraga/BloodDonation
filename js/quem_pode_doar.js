@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const login = document.getElementById("login");
     const register = document.getElementById("register");
     const headerPerfil = document.getElementsByClassName("header-perfil")[0];
-    const perfilNav = document.getElementsByClassName("perfil-nav")[0];
 
     const logged = () => {
         for(let c = 0; c < localStorage.length; c++) {
@@ -30,18 +29,18 @@ document.addEventListener("DOMContentLoaded", function() {
     perfil.addEventListener("click", (e) => {
         e.preventDefault();
 
-        window.location.href = "pages/userData.html";
+        window.location.href = "../pages/userData.html";
     });
 
     login.addEventListener("click", (e) => {
         e.preventDefault();
 
-        window.location.href = "pages/login.html";
+        window.location.href = "../pages/login.html";
     });
 
     register.addEventListener("click", (e) => {
         e.preventDefault();
 
-        window.location.href = "pages/register.html";
+        window.location.href = "../pages/register.html";
     });
 });

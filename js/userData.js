@@ -46,7 +46,7 @@ buttons[0].addEventListener('click', () => {
 buttons[1].addEventListener("click", (e) => {
     e.preventDefault()
 
-    data.logged = false;
+    data.logged = true;
     localStorage.setItem(data.userName, JSON.stringify(data))
 
     window.location.href = "../index.html";
