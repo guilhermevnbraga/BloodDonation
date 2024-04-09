@@ -30,7 +30,9 @@ address.value = data.address;
 bloodType.value = data.bloodType;
 password.value = data.password
 
-buttons[0].addEventListener('click', () => {
+buttons[0].addEventListener('click', (e) => {
+    e.preventDefault()
+    
     data.name = name.value;
     data.email = email.value;
     data.birthDate = birthDate.value;
@@ -41,6 +43,7 @@ buttons[0].addEventListener('click', () => {
     data.password = password.value;
 
     localStorage.setItem(data.userName, JSON.stringify(data))
+    window.location.href = "../index.html"
 })
 
 buttons[1].addEventListener("click", (e) => {
