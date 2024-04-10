@@ -2,7 +2,8 @@
     .img-joinha {
         display: none;
     }
-    .gota-recebendo{
+
+    .gota-recebendo {
         display: none;
     }
 }
@@ -12,6 +13,7 @@
 }
 
 @media screen and (max-width: 1120px) {
+
     .conjunto-cards,
     .bloco-compatiblidade {
         flex-direction: column;
@@ -82,14 +84,47 @@
     .perfil-nav button:hover {
         box-shadow: none;
     }
+
     .col {
         display: flex;
         flex-direction: column;
     }
-}
 
-@media screen and (max-width: 567px){
     .card {
         width: 300px;
     }
+
+    .criteria img {
+        width: 30vw;
+    }
+
+    .content p {
+        font-size: 17px
+    }
+
+    .criteria {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 567px) {
+    .card {
+        width: 300px;
+    }
+
+    .criteria img {
+        display: none;
+    }
+
+    .content p {
+        font-size: 17px
+    }
+
+    .criteria {
+        width: 100%;
+        height: 100%;
+    }
+
 }
