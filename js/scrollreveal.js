@@ -1,4 +1,4 @@
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
 sr.reveal(".conteudo-box", { duration: 1000})
 sr.reveal(".conjunto-cards", { duration: 1000})
 sr.reveal(".container p", { duration: 1000})
