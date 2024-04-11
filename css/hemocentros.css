@@ -45,3 +45,12 @@
 .card-hemo > p{
     margin-bottom: 2px;
 }
+
+select{
+    background-color: #e6e5e5;
+    color: #000;
+    padding: 2px;
+    border: 1px solid #525151;
+    border-radius: 4px;
+
+}
