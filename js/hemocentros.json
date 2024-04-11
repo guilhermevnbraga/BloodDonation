@@ -1,13 +1,13 @@
 
-{"estados": [
+{"states": [
     {
-      "regiao": "Região Norte",
-      "estados": [
+      "region": "Região Norte",
+      "states": [
         {
           "id": 19,
-          "nome": "Acre",
-          "regiao": "Região Norte",
-          "unidades": [
+          "name": "Acre",
+          "region": "Região Norte",
+          "unity": [
             {
               "title": "Hemoacre",
               "the_content": "Av. Getúlio Vargas, 2787 - Vila Ivonete - Rio Branco, Acre - Cep:69914-500",
@@ -19,9 +19,9 @@
         },
         {
           "id": 21,
-          "nome": "Amapá",
-          "regiao": "Região Norte",
-          "unidades": [
+          "name": "Amapá",
+          "region": "Região Norte",
+          "unity": [
             {
               "title": "Hemoap",
               "the_content": "Av Fab, 0 - Central - Macapa, Amapá - Cep:68900-073",
@@ -33,9 +33,9 @@
         },
         {
           "id": 22,
-          "nome": "Amazonas",
-          "regiao": "Região Norte",
-          "unidades": [
+          "name": "Amazonas",
+          "region": "Região Norte",
+          "unity": [
             {
               "title": "Fhemoam",
               "the_content": "Av Constantino Nery, 4397 - Chapada - Manaus, Amazonas - Cep:69050-000",
@@ -47,9 +47,9 @@
         },
         {
           "id": 32,
-          "nome": "Pará",
-          "regiao": "Região Norte",
-          "unidades": [
+          "name": "Pará",
+          "region": "Região Norte",
+          "unity": [
             {
               "title": "Fundação Hemopa",
               "the_content": "Travessa Padre Eutiquio, 2109 - Batista Campos - Belem, Pará - Cep:66033-000",
@@ -61,9 +61,9 @@
         },
         {
           "id": 39,
-          "nome": "Rondônia",
-          "regiao": "Região Norte",
-          "unidades": [
+          "name": "Rondônia",
+          "region": "Região Norte",
+          "unity": [
             {
               "title": "Fhemeron",
               "the_content": "R Benedito De S Brito, 0 Fhemeron - Industrial - Porto Velho, Rondônia - Cep:76821-080",
@@ -82,9 +82,9 @@
         },
         {
           "id": 40,
-          "nome": "Roraima",
-          "regiao": "Região Norte",
-          "unidades": [
+          "name": "Roraima",
+          "region": "Região Norte",
+          "unity": [
             {
               "title": "Hemocentro De Roraima",
               "the_content": "Av Brg Eduardo Gomes, 3418 - Aeroporto - Boa Vista, Roraima - Cep:69304-015",
@@ -96,9 +96,9 @@
         },
         {
           "id": 43,
-          "nome": "Tocantins",
-          "regiao": "Região Norte",
-          "unidades": [
+          "name": "Tocantins",
+          "region": "Região Norte",
+          "unity": [
             {
               "title": "Unidade De Coleta De Transfusão Augustinópolis",
               "the_content": "Rua Anicuns, 200 - Centro - Augustinópolis, Tocantins - Cep:77960-000",
@@ -132,13 +132,13 @@
       ]
     },
     {
-      "regiao": "Região Nordeste",
-      "estados": [
+      "region": "Região Nordeste",
+      "states": [
         {
           "id": 20,
-          "nome": "Alagoas",
-          "regiao": "Região Nordeste",
-          "unidades": [
+          "name": "Alagoas",
+          "region": "Região Nordeste",
+          "unity": [
             {
               "title": "Hemocentro De Alagoas &#8211; Hemoal",
               "the_content": "Av. Jorge De Lima, 58 - Trapiche - Maceio, Alagoas - Cep:57010-300",
@@ -150,9 +150,9 @@
         },
         {
           "id": 23,
-          "nome": "Bahia",
-          "regiao": "Região Nordeste",
-          "unidades": [
+          "name": "Bahia",
+          "region": "Região Nordeste",
+          "unity": [
             {
               "title": "Hemoba",
               "the_content": "Ld Do Hospital Geral, 0 2º Andar - Brotas - Salvador, Bahia - Cep:40286-240",
@@ -164,9 +164,9 @@
         },
         {
           "id": 24,
-          "nome": "Ceará",
-          "regiao": "Região Nordeste",
-          "unidades": [
+          "name": "Ceará",
+          "region": "Região Nordeste",
+          "unity": [
             {
               "title": "Hemoce",
               "the_content": "Av. José Bastos, 3390 Rodolfo Teófilo - Fortaleza - CE - Cep:60431-086",
@@ -178,9 +178,9 @@
         },
         {
           "id": 28,
-          "nome": "Maranhão",
-          "regiao": "Região Nordeste",
-          "unidades": [
+          "name": "Maranhão",
+          "region": "Região Nordeste",
+          "unity": [
             {
               "title": "Centro De Hematologia E Hemoterapia Do Maranhão",
               "the_content": "R Cinco De Janeiro, 0 - Jordoa - Sao Luis, Maranhão - Cep:65040-450",
@@ -192,9 +192,9 @@
         },
         {
           "id": 33,
-          "nome": "Paraíba",
-          "regiao": "Região Nordeste",
-          "unidades": [
+          "name": "Paraíba",
+          "region": "Região Nordeste",
+          "unity": [
             {
               "title": "Hemocentro Coordenador Paraíba",
               "the_content": "Av D Pedro Ii, 1119 - Centro - Joao Pessoa, Paraíba - Cep:58013-420",
@@ -206,9 +206,9 @@
         },
         {
           "id": 35,
-          "nome": "Pernambuco",
-          "regiao": "Região Nordeste",
-          "unidades": [
+          "name": "Pernambuco",
+          "region": "Região Nordeste",
+          "unity": [
             {
               "title": "Fundação De Hematologia E Hemoterapia De Pernambuco",
               "the_content": "Rua Joaquim Nabuco, 171 - Gracas - Recife, Pernambuco - Cep:52011-100",
@@ -269,9 +269,9 @@
         },
         {
           "id": 36,
-          "nome": "Piauí",
-          "regiao": "Região Nordeste",
-          "unidades": [
+          "name": "Piauí",
+          "region": "Região Nordeste",
+          "unity": [
             {
               "title": "Hemopi",
               "the_content": "Rua 1º De Maio, 235 - Centro/sul - Teresina, Piauí - Cep:64001-430",
@@ -283,9 +283,9 @@
         },
         {
           "id": 37,
-          "nome": "Rio Grande Do Norte",
-          "regiao": "Região Nordeste",
-          "unidades": [
+          "name": "Rio Grande Do Norte",
+          "region": "Região Nordeste",
+          "unity": [
             {
               "title": "Hemonorte",
               "the_content": "Av Alm Alexandrino De Alencar, 1800 - Tirol - Natal, Rio Grande Do Norte - Cep:59015-350",
@@ -304,9 +304,9 @@
         },
         {
           "id": 42,
-          "nome": "Sergipe",
-          "regiao": "Região Nordeste",
-          "unidades": [
+          "name": "Sergipe",
+          "region": "Região Nordeste",
+          "unity": [
             {
               "title": "Hemose",
               "the_content": "Av Pres Tancredo Neves, 0 C. Adm. Gov Augusto - Capucho - Aracaju, Sergipe - Cep:49080-470",
@@ -319,13 +319,13 @@
       ]
     },
     {
-      "regiao": "Região Centro-Oeste",
-      "estados": [
+      "region": "Região Centro-Oeste",
+      "states": [
         {
           "id": 25,
-          "nome": "Distrito Federal",
-          "regiao": "Região Centro-Oeste",
-          "unidades": [
+          "name": "Distrito Federal",
+          "region": "Região Centro-Oeste",
+          "unity": [
             {
               "title": "Fundação Hemocentro De Brasília",
               "the_content": "Smhn, 03 Qd.03 Conj.a Bloco03 - Asa Norte - Brasilia, Distrito Federal - Cep:70710-908",
@@ -337,9 +337,9 @@
         },
         {
           "id": 27,
-          "nome": "Goiás",
-          "regiao": "Região Centro-Oeste",
-          "unidades": [
+          "name": "Goiás",
+          "region": "Região Centro-Oeste",
+          "unity": [
             {
               "title": "Hemocentro De Goiás",
               "the_content": "Av Anhanguera, 5195 - Setor Coimbra - Goiania, Goiás - Cep:74535-010",
@@ -351,9 +351,9 @@
         },
         {
           "id": 29,
-          "nome": "Mato Grosso",
-          "regiao": "Região Centro-Oeste",
-          "unidades": [
+          "name": "Mato Grosso",
+          "region": "Região Centro-Oeste",
+          "unity": [
             {
               "title": "Mt Hemocentro",
               "the_content": "R Treze De Junho, 1055 - Porto - Cuiaba, Mato Grosso - Cep:78025-000",
@@ -365,9 +365,9 @@
         },
         {
           "id": 30,
-          "nome": "Mato Grosso Do Sul",
-          "regiao": "Região Centro-Oeste",
-          "unidades": [
+          "name": "Mato Grosso Do Sul",
+          "region": "Região Centro-Oeste",
+          "unity": [
             {
               "title": "Hemosul",
               "the_content": "Av Fernando C Da Costa, 1304 - Centro - Campo Grande, Mato Grosso Do Sul - Cep:79004-310",
@@ -380,13 +380,13 @@
       ]
     },
     {
-      "regiao": "Região Sudeste",
-      "estados": [
+      "region": "Região Sudeste",
+      "states": [
         {
           "id": 26,
-          "nome": "Espírito Santo",
-          "regiao": "Região Sudeste",
-          "unidades": [
+          "name": "Espírito Santo",
+          "region": "Região Sudeste",
+          "unity": [
             {
               "title": "Hemoes",
               "the_content": "Av Mal Campos, 1468 - Maruípe - Vitoria, Espírito Santo - Cep:29045-460",
@@ -398,9 +398,9 @@
         },
         {
           "id": 31,
-          "nome": "Minas Gerais",
-          "regiao": "Região Sudeste",
-          "unidades": [
+          "name": "Minas Gerais",
+          "region": "Região Sudeste",
+          "unity": [
             {
               "title": "Núcleo de Divinópolis",
               "the_content": "Rua José Gabriel Medef, 221 - Bairro: Padre Libério - Cep: 35500-139",
@@ -522,8 +522,8 @@
             },
             {
               "title": "Hemominas Poços De Caldas",
-              "the_content": "Av Jose R Prezia, 303 - Jardim Dos Estados - Pocos De Caldas, Minas Gerais - Cep:37701-102",
-              "map": "https://www.google.com.br/maps/place/Avenida+José+Remígio+Prezia,+303+-+Jardim+dos+Estados,+Poços+de+Caldas+-+MG,+Brazil/@-21.7847751,-46.5529022",
+              "the_content": "Av Jose R Prezia, 303 - Jardim Dos states - Pocos De Caldas, Minas Gerais - Cep:37701-102",
+              "map": "https://www.google.com.br/maps/place/Avenida+José+Remígio+Prezia,+303+-+Jardim+dos+states,+Poços+de+Caldas+-+MG,+Brazil/@-21.7847751,-46.5529022",
               "tel": "(35)37129012 ",
               "cep": "37701-102"
             },
@@ -545,9 +545,9 @@
         },
         {
           "id": 9,
-          "nome": "Rio de Janeiro",
-          "regiao": "Região Sudeste",
-          "unidades": [
+          "name": "Rio de Janeiro",
+          "region": "Região Sudeste",
+          "unity": [
             {
               "title": "Hemocampos &#8211; Hemocentro Regional de Campos dos Goytacazes",
               "the_content": "<span style=\"font-family: Default Sans Serif,Verdana,Arial,Helvetica,sans-serif; font-size: small;\">Rua Rocha Leão, 2 – Cajú – Campos dos Goytacazes, RJ – Cep: 28051-170</span>",
@@ -573,9 +573,9 @@
         },
         {
           "id": 10,
-          "nome": "São Paulo",
-          "regiao": "Região Sudeste",
-          "unidades": [
+          "name": "São Paulo",
+          "region": "Região Sudeste",
+          "unity": [
             {
               "title": "Irmandade Santa Casa de São Carlos",
               "the_content": "<span style=\"font-family: Default Sans Serif,Verdana,Arial,Helvetica,sans-serif; font-size: small;\">Rua Paulino Botelho de Abreu Sampaio, 535 – Jardim Pureza – São Carlos, São Paulo – Cep: 13561-060</span>",
@@ -679,13 +679,13 @@
       ]
     },
     {
-      "regiao": "Região Sul",
-      "estados": [
+      "region": "Região Sul",
+      "states": [
         {
           "id": 34,
-          "nome": "Paraná",
-          "regiao": "Região Sul",
-          "unidades": [
+          "name": "Paraná",
+          "region": "Região Sul",
+          "unity": [
             {
               "title": "Hospital Universitário Regional Do Norte Do Paraná",
               "the_content": "R. Claudio D. Cavalieri, 156 - Jd. Aruba - Londrina, Paraná - Cep:86038-350",
@@ -858,9 +858,9 @@
         },
         {
           "id": 38,
-          "nome": "Rio Grande Do Sul",
-          "regiao": "Região Sul",
-          "unidades": [
+          "name": "Rio Grande Do Sul",
+          "region": "Região Sul",
+          "unity": [
             {
               "title": "Hemosar",
               "the_content": "Rua Boa Vista, 401 - Centro - Santa Rosa, Rio Grande Do Sul - Cep:98900-000",
@@ -942,9 +942,9 @@
         },
         {
           "id": 41,
-          "nome": "Santa Catarina",
-          "regiao": "Região Sul",
-          "unidades": [
+          "name": "Santa Catarina",
+          "region": "Região Sul",
+          "unity": [
             {
               "title": "Centro De Hematologia E Hemoterapia De Santa Catarina",
               "the_content": "Av Prf Othon Gama Deca, 756 Praça D. Pedro I - Centro - Florianopolis, Santa Catarina - Cep:88015-240",

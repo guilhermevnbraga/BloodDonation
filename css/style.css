@@ -28,7 +28,7 @@ body {
     color: #fafafa;
 }
 
-.main__conteudo {
+.main__content {
     margin-top: 25px;
 }
 
@@ -103,10 +103,10 @@ body {
 }
 
 .banner img {
-    max-width: 100%;
+    width: 100vw;
 }
 
-.img-joinha {
+.img-thumbsup {
     visibility: hidden;
 }
 
@@ -121,7 +121,7 @@ body {
     cursor: pointer;
 }
 
-.conteudo-box {
+.content-box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -134,7 +134,7 @@ body {
     margin: 50px 0 50px 0;
 }
 
-.conjunto-cards {
+.cards-set {
     visibility: hidden;
     display: flex;
     justify-content: space-around;
@@ -161,7 +161,7 @@ body {
     width: 150px;
 }
 
-.card-1 .conteudo-title {
+.card-1 .content-title {
     margin-bottom: 25px;
 }
 
@@ -169,7 +169,7 @@ body {
     margin-top: 20px;
 }
 
-.card-2 .conteudo-title {
+.card-2 .content-title {
     margin-bottom: 25px;
 }
 
@@ -181,13 +181,13 @@ body {
     margin-top: 20px;
 }
 
-.conteudo-title {
+.content-title {
     visibility: hidden;
     font-size: 30px;
     text-align: center;
 }
 
-.conteudo-img {
+.content-img {
     width: 280px;
 }
 
@@ -215,19 +215,19 @@ body {
     width: 42px;
 }
 
-.footer-midias div {
+.footer-medias div {
     align-items: center;
 }
 
-.footer-conteudos {
+.footer-contents {
     padding-top: 43px;
 }
 
-.footer-conteudos>h3 {
+.footer-contents>h3 {
     font-size: 35px;
 }
 
-.footer-conteudos>p {
+.footer-contents>p {
     font-size: 20px;
 }
 
@@ -239,12 +239,12 @@ body {
     width: 400px;
 }
 
-.gota-recebendo{
+.drop-receiving{
     visibility: hidden;
     width: 22vw;
 }
 
-.tabela {
+.table {
     visibility: hidden;
     width: 90%;
     margin-bottom: 20px;
@@ -255,12 +255,12 @@ body {
     margin: auto;
 }
 
-.espaco {
+.space {
     margin: 20px 0 50px 0;
 }
 
-.bloco-compatiblidade>img,
-.bloco-compatiblidade>div {
+.compatibility-block>img,
+.compatibility-block>div {
     margin-top: -10%;
 }
 
@@ -268,7 +268,7 @@ body {
     margin: auto;
 }
 
-.tamanho-texto {
+.text-size {
     max-width: 800px;
 }
 
