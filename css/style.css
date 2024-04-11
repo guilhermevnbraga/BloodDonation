@@ -109,6 +109,7 @@ body {
 
 .img-thumbsup {
     visibility: hidden;
+    width: 18vw;
 }
 
 .nav-list a,
@@ -274,7 +275,7 @@ body {
 }
 
 .space {
-    margin: 20px 0 50px 0;
+    margin: 20px 0 8vh 0;
 }
 
 .compatibility-block>img,

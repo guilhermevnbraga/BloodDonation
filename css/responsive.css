@@ -1,9 +1,9 @@
 @media screen and (max-width: 1326px) {
-    .img-joinha {
+    .img-thumbsup {
         display: none;
     }
 
-    .gota-recebendo {
+    .drop-receiving {
         display: none;
     }
 }
@@ -14,8 +14,8 @@
 
 @media screen and (max-width: 1120px) {
 
-    .conjunto-cards,
-    .bloco-compatiblidade {
+    .cards-set,
+    .compatibility-block {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -27,7 +27,7 @@
         height: 400px;
     }
 
-    .conjunto-cards {
+    .cards-set {
         gap: 30px;
     }
 
@@ -56,6 +56,7 @@
 }
 
 @media screen and (max-width: 801px) {
+
     .header__hamburguer {
         display: block;
     }
@@ -69,7 +70,7 @@
         width: 100%;
     }
 
-    .header-conteudo {
+    .header-content {
         display: block;
     }
 
@@ -182,7 +183,7 @@
         align-items: center; 
         height: 180vh; 
     }
-    .tabela{
+    .table{
         margin-left: 36px;
     }
 }
