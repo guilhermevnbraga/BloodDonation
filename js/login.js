@@ -1,5 +1,5 @@
 const name = document.getElementById('name');
-const erro = document.getElementById('erro')
+const error = document.getElementById('error')
 const submit = document.getElementsByClassName('btnRegistration')[0]
 
 const login = () => {
@@ -23,6 +23,6 @@ submit.addEventListener('click', e => {
         localStorage.setItem(data.userName, JSON.stringify(data))
         window.location.href = '../index.html'
     } else {
-        erro.innerHTML = 'Nome/Email ou Senha incorretos'
+        error.innerHTML = 'Nome/Email ou Senha incorretos'
     }
 })
