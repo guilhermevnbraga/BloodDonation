@@ -7,6 +7,7 @@ const address = document.getElementById("address");
 const bloodType = document.getElementById("bloodType");
 const submit = document.getElementsByClassName("btnRegistration");
 const buttons = document.getElementsByClassName("btnRegistration");
+const edits = Array.from(document.getElementsByClassName('edit'))
 
 const logged = () => {
     for(let c = 0; c < localStorage.length; c++) {
@@ -20,6 +21,14 @@ const logged = () => {
 }
 
 data = logged();
+
+const inputs = [name, email, birthDate, cpf, weight, address, password, bloodType]
+
+const disableInputs = () => {
+    inputs.forEach(input => {
+        input.setAttribute('disabled', 'true')
+    })
+}
 
 name.value = data.name;
 email.value = data.email;
@@ -42,6 +51,7 @@ buttons[0].addEventListener('click', (e) => {
     data.bloodType = bloodType.value;
     data.password = password.value;
 
+    disableInputs()
     localStorage.setItem(data.userName, JSON.stringify(data))
     window.location.href = "../index.html"
 })
@@ -50,8 +60,9 @@ buttons[1].addEventListener("click", (e) => {
     e.preventDefault()
 
     data.logged = true;
-    localStorage.setItem(data.userName, JSON.stringify(data))
 
+    disableInputs()
+    localStorage.setItem(data.userName, JSON.stringify(data))
     window.location.href = "../index.html";
 });
 
@@ -59,7 +70,17 @@ buttons[2].addEventListener("click", (e) => {
     e.preventDefault()
 
     data.logged = false;
-    localStorage.setItem(data.userName, JSON.stringify(data))
 
+    disableInputs()
+    localStorage.setItem(data.userName, JSON.stringify(data))
     window.location.href = "../index.html";
+});
+
+edits.forEach(edit => {
+    edit.addEventListener('click', e => {
+        e.preventDefault()
+
+        const index = edits.indexOf(edit)
+        inputs[index].removeAttribute('disabled')
+    })
 });

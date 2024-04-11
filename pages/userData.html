@@ -18,46 +18,70 @@
             <div class="cardRegistration">
                 <h1 class="registration">DADOS CADASTRADOS</h1>
                 <div class="field">
-                    <label for="name">Nome completo *</label>
-                    <input type="text" id="name" placeholder="Nome completo">
+                    <div class="extra-label">
+                        <label for="name">Nome completo *</label>
+                        <button class="edit"></button>
+                    </div>
+                    <input disabled type="text" id="name" placeholder="Nome completo">
                     <p>Obrigatório preencher nome</p>
                 </div>
                 <div class="field">
-                    <label for="email">Email *</label>
-                    <input type="text" id="email" placeholder="Email">
+                    <div class="extra-label">
+                        <label for="email">Email *</label>
+                        <button class="edit"></button>
+                    </div>
+                    <input disabled type="text" id="email" placeholder="Email">
                     <p>Obrigatório preencher email</p>
                 </div>
                 <div class="field">
-                    <label for="birthDate">Data de nascimento *</label>
-                    <input type="date" id="birthDate" placeholder="Data de nascimento">
+                    <div class="extra-label">
+                        <label for="birthDate">Data de nascimento *</label>
+                        <button class="edit"></button>
+                    </div>
+                    <input disabled type="date" id="birthDate">
                     <p>Obrigatório preencher data de nascimento</p>
                 </div>
                 <div class="field">
-                    <label for="cpf">CPF *</label>
-                    <input type="text" id="cpf" placeholder="CPF">
+                    <div class="extra-label">
+                        <label for="cpf">CPF *</label>
+                        <button class="edit"></button>
+                    </div>
+                    <input disabled type="text" id="cpf" placeholder="CPF">
                     <p>Obrigatório preencher CPF</p>
                 </div>
                 <div class="field">
-                    <label for="Weight">Peso *</label>
-                    <input type="text" id="Weight" placeholder="Peso">
+                    <div class="extra-label">
+                        <label for="Weight">Peso *</label>
+                        <button class="edit"></button>
+                    </div>
+                    <input disabled type="text" id="Weight" placeholder="Peso">
                     <p>Obrigatório preencher peso</p>
                 </div>
     
                 <div class="field">
-                    <label for="address">Endereço completo *</label>
-                    <input type="text" id="address" placeholder="Endereço">
+                    <div class="extra-label">
+                        <label for="address">Endereço Completo *</label>
+                        <button class="edit"></button>
+                    </div>
+                    <input disabled type="text" id="address" placeholder="Endereço">
                     <p>Obrigatório preencher endereço</p>
                 </div>
                 <div class="field">
-                    <div id="password-label">
+                    <div class="extra-label">
                         <label for="password">Senha *</label>
-                        <button id="eye"></button>
+                        <div id="pass-edit">
+                            <button id="eye"></button>
+                            <button class="edit"></button>
+                        </div>
                     </div>
-                    <input type="password" id="password" placeholder="Senha">
+                    <input disabled type="password" id="password" placeholder="Senha">
                     <p>Obrigatório preencher telefone</p>
                 </div>
                 <div class="field">
-                    <label for="bloodType">Tipo sanguíneo </label>
+                    <div class="extra-label">
+                        <label for="bloodType">Tipo sanguíneo </label>
+                        <button class="edit"></button>
+                    </div>
                     <select name="bloodType" id="bloodType">
                         <option value="">Selecione o tipo sanguíneo</option>
                         <option value="A+">A+</option>
@@ -71,7 +95,7 @@
                     </select>
                 </div>
                 <div class="btn">
-                    <button type="submit" class="btnRegistration">Alterar</button>
+                    <button type="submit" class="btnRegistration">Confirmar</button>
                     <button type="button" class="btnRegistration">Cancelar</button>
                     <button type="button" class="btnRegistration">Sair</button>
                 </div>
