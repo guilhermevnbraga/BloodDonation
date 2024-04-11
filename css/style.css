@@ -13,6 +13,7 @@
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
+    text-align: justify
 }
 
 body {
@@ -185,6 +186,7 @@ body {
     visibility: hidden;
     font-size: 30px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .content-img {
@@ -212,7 +214,7 @@ body {
 }
 
 .footer-icon-2 {
-    width: 42px;
+    width: 20px;
 }
 
 .footer-medias div {
@@ -231,6 +233,20 @@ body {
     font-size: 20px;
 }
 
+.footer-contat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-contat:hover{
+    color: #0a54c2;
+}
+
 .container-2 {
     width: 300px;
 }
@@ -247,8 +263,10 @@ body {
 .table {
     visibility: hidden;
     width: 90%;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
+
 
 .container-3 {
     width: 1200px;
