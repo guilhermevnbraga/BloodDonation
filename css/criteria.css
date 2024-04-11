@@ -1,5 +1,6 @@
 .fullBody {
     display: flex;
+    text-align: justify;
     justify-content: center; 
     align-items: center; 
     height: 100vh; 
@@ -7,22 +8,29 @@
 
 .criteria {
     display: flex;
-    align-items: center; 
-    width: 100%; 
-    height: 100%;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(191, 188, 188);
+    width: 56%;
+    height: 82%;
+    padding:50px ;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin: 8%;
+
 }
 
-.criteria .image {
-    flex: 0 0 auto; 
-    margin-right: 20px;
+.criteria p{
+    font-size: 20px
 }
 
-.criteria .content {
-    flex: 1; 
+.criteria h1{
+ align-items: center;
+ margin-bottom: 5%;
+ font-size: 40px;
 }
 
-.criteria img {
-    max-width: 100%; 
-    height: auto;
+.image{
+    margin: 5%;
+    
 }

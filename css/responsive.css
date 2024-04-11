@@ -93,18 +93,13 @@
     .card {
         width: 300px;
     }
-
-    .criteria img {
-        width: 30vw;
-    }
-
     .content p {
-        font-size: 17px
+        font-size: 20px
     }
 
     .criteria {
-        width: 100%;
-        height: 100%;
+        width: 89%;
+        height: 74%;
     }
 
 }
@@ -119,12 +114,12 @@
     }
 
     .content p {
-        font-size: 17px
+        font-size: 30px
     }
 
     .criteria {
-        width: 100%;
-        height: 100%;
+        width: 89%;
+        height: 84%;
     }
 
 }
